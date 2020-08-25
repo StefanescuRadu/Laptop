@@ -1,0 +1,467 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    background-color:#ffffff ;
+}
+
+
+.presentation{
+    
+   width: 90%;
+   margin: auto;
+   background: url(img/poza2.jpg);
+   background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  background-size: cover;
+  
+}
+h4{
+
+    text-transform: uppercase;
+
+   height: 25px;
+   padding:3px
+}
+h1{
+    margin:30px;
+    padding:20px;
+    text-transform: uppercase;
+    z-index:1;
+}
+
+p{
+    margin:30px;
+    padding:20px;
+    text-transform: capitalize;
+}
+header{
+    display:flex;
+    height: 8vh;
+    width: 90%;
+    margin: auto;
+    left:71px;
+    align-items: center;
+    position: fixed;
+    z-index:2;
+}
+
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+
+.logo-container{
+flex:1;
+}
+
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+nav{
+    
+    flex:2;
+
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    color: #5f5f79;
+    font-size:18px;
+    text-decoration:none;
+}
+.nav-link:hover{
+    color: black;
+    border-bottom: 2px solid purple;
+}
+
+.cart{
+   
+    flex:1;
+    justify-content: flex-end;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 85vh;
+    align-items: center;
+}
+
+.presentation1{
+    display:flex;
+    width:70%;
+    margin:auto;
+    align-items: center;
+    
+}
+
+.introduction1{
+    flex:1;
+}
+.introduction1 p{
+    font-size:45px;
+    margin:20px 0px;
+}
+
+.cover1{
+    flex:1;
+    display: flex;
+    justify-content: center;height: 70vh;
+}
+.cover1 img{
+    height:400px;
+    padding-top:100px;
+    margin:50px;
+    
+}
+
+.introduction{
+    
+    flex:1;
+}
+
+.intro-text h1{
+    font-size:44px;
+    font-weight: 500;
+    background: linear-gradient(to right,#494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size:22px;
+    color: #858772;
+}
+
+.cta{
+    padding: 50px 0px 0px 0px;
+    margin:40px;
+}
+
+.cta-select{
+    border:2px solid #c36cbb;
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-select:hover{
+    background:#c36cbb;
+    color:white;
+}
+.cta-add:hover{
+    background:transparent;
+    color:black;
+    border:2px solid #c36cbb;
+}
+
+.cta-add{
+    background: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 30px;
+}
+.cover{
+    flex:1;
+    display: flex;
+    justify-content: center;height: 70vh;
+}
+
+.cover img{
+    height: 100%;
+    filter: drop-shadow(0px 3px 5px black);
+    animation: drop 1.5s ease;
+    z-index:1;
+}
+
+
+
+
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform:translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes shake{
+    0%{
+        opacity: 0.5;
+        transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+    50%{
+        opacity: 0.7;
+        transition:cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    100%{
+        opacity: 1;
+        transition: cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    }
+}
+
+    
+    .specs{
+        width:90%;
+        margin:auto;
+    }
+      
+    #container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        border-collapse: collapse;
+    } 
+
+    .item{
+        display: grid;
+        justify-content: center;
+        box-sizing: border-box;
+        align-items: center;
+        animation: shake  2s;
+        font-size:23px;
+        line-height: 20px;
+        
+    }
+
+    table{
+        margin:20px;
+       
+        
+    }
+
+ table,th,td{
+     border-top: 1px solid black;
+     border-collapse: collapse;
+     word-spacing: 20px;
+     font-size: smaller;
+     
+ }
+
+ th{
+     background-color: #f0edec;
+     color:rgb(102,102,102);
+     width: 120px;
+ }
+ td{
+     background-color: white;
+     color:rgb(102,102,102);
+     width: 350px;
+     height: 30px; 
+     font-size:  small  ;
+     text-transform: uppercase;
+     padding:0px 0px 0px 30px;
+ }
+
+ h3{
+    margin-left:30px;
+    margin-top:50px;
+ }
+
+ .specifications{
+    
+     height: 20vh;
+     width:90%;
+     text-align:center;
+     margin: 0px auto;
+     font-size:25px;
+     line-height: 14vh;
+     background: url(img/priscilla-du-preez-6gWMviz-vSo-unsplash.jpg);
+     background-repeat: no-repeat;
+     background-size:cover;
+     background-position: center;  
+     color:white;  
+ }
+
+ .laptop{
+     background-color: red;
+     height: 50vh;
+     width: 90%;
+     margin:auto;
+     text-align: center;
+     line-height: 50vh;
+     position:relative;
+ }
+
+ .laptop p{
+     font-size:50px;
+ }
+ 
+ .laptops{
+     min-height: 80vh;
+     width:80%;
+     margin:auto;
+ }
+
+ .laptop-items-container{
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr;   
+ }
+
+ .laptop-item-container{
+     position:relative;
+ }
+ .laptop-pic{
+        display:grid;
+        justify-content: center;
+        box-sizing: border-box;
+        align-items: center;
+      
+ }
+
+ .laptop-pic img{
+     width:380px;
+     height:350px;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     filter: brightness(10%);
+     
+ }
+
+ .subtitle{
+    position:absolute;
+    bottom:10px;
+    font-size: 25px; 
+}
+
+.subtitle1{
+    color: darkolivegreen;
+}
+
+.subtitle2{
+    color:white;
+}
+
+.subtitle3{
+    color:darkred
+}
+.subtitle4{
+    color: darkorange
+}
+.subtitle5{
+    color:darkseagreen
+}
+.subtitle6{
+    color:darkmagenta;
+}
+
+.img-lighten{
+    transition: 1s;
+    filter: brightness(900%);
+}
+
+footer{
+    position: absolute;
+    bottom: -300px;
+    padding: 80px 0;
+    width:100%;
+    color:black;
+    display: flex;
+    ;
+}
+    
+
+.copy{
+    flex:1;
+    margin: 0 105px;
+}
+
+.privacy{
+    flex:1;
+    display: flex;
+  
+}
+
+.private{
+    flex:1;
+    font-size: 30px;
+}
+
+.rules{
+    flex:1;
+    font-size: 30px;
+}
+
+
+.contact-form{
+    width: 80%;
+    margin: 0 auto;
+    max-width:600px;
+    position:absolute;
+   bottom:- 50%; 
+    left:50%;
+    transform: translate(-50%,0%);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-form h1{
+    margin-top: 80px;
+    font-weight: 200;
+    color: white;
+}
+
+.txt{
+    border: 2px solid pink;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.txt label{
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    padding:10px;
+    color:white;
+    font-size:20px;
+}
+
+.txt input, .txt textarea{
+    width: 100%;
+    border: 2px solid black;
+    outline:none;
+    padding: 10px;
+}
+
+.btn{
+    display: block;
+    padding: 14px 0;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 8px;
+    width: 100%;
+    background: darkmagenta;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+
+
+

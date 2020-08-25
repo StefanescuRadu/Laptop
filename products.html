@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body> 
+     <header>
+    <div class="logo-container">
+        <img src="img/logo.svg" alt="">
+        <h4 class="logo">Stefanescu Radu Stefan</h4>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li ><a class="nav-link" href="index.html">Home</a></li>
+            <li ><a class="nav-link" href="products.html">Products</a></li>
+            <li ><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cart">
+        <img src="img/cart.svg" alt="">
+    </div>
+</header>
+<main>
+    <section class="presentation1">
+
+    <div class="introduction1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+    </div>
+
+    <div class="cover1">
+        <img src="img/masa.jpg" alt="">
+    </div>
+    </section>
+
+    <div class="laptops">
+        <div class="laptop-items-container">
+            <div class="laptop-item-container">
+               <div class="laptop-pic">
+                <img src="img/laptop4.jpg" alt="">
+               </div>
+               <div class="subtitle">
+                 <p class="subtitle1">Lenovo ThinkPad L570</p>
+               </div>
+            </div>
+            <div class="laptop-item-container">
+              <div class="laptop-pic">
+                <img src="img/laptop5.jpg" alt="">
+            </div>
+              <div class="subtitle">
+                <p class="subtitle2">Apple Macbook X301</p>
+              </div>
+        </div>
+
+            <div class="laptop-item-container">
+              <div class="laptop-pic">
+                <img src="img/unsplash-NuFUbftUu_s-unsplash.jpg" alt="">
+              </div>
+              <div class="subtitle">
+                <p class="subtitle3">Asus Razer Zephryus</p>
+              </div>
+        </div>
+
+            <div class="laptop-item-container">
+              <div class="laptop-pic">
+                <img src="img/laptop.jpg" alt="">
+              </div>
+              <div class="subtitle">
+                <p class="subtitle4">Asus Zephryus X291 DC</p>
+              </div>
+        </div>
+
+            <div class="laptop-item-container">
+              <div class="laptop-pic">
+                <img src="img/laptop1.jpg" alt="">
+              </div>
+              <div class="subtitle">
+                <p class="subtitle5">Acer Chromebook 11 N7</p>
+              </div>
+           </div>
+
+            <div class="laptop-item-container">
+              <div class="laptop-pic">
+                <img src="img/laptop2.jpg" alt="">
+              </div>
+              <div class="subtitle">
+                <p class="subtitle6">Acer Chromebook 11 N8</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="copy">&copy; Copyright reserved</div>
+    <div class="privacy">
+        <div class="private">Privacy policy</div>
+        <div class="rules">Rules</div>
+    </div>
+    
+    </footer>
+    
+</body>
+<script>
+
+    const portfolioItems = document.querySelectorAll(".laptop-item-container")
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', ()=>{
+            portfolioItem.childNodes[1].classList.add("img-lighten");
+        })
+    })
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout', ()=>{
+            portfolioItem.childNodes[1].classList.remove("img-lighten");
+        })
+    })
+</script>
+
+</html>
